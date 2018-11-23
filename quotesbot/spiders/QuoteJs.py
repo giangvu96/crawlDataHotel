@@ -16,7 +16,7 @@ class Quote(scrapy.Spider):
     ]
 
     def __init__(self):
-        self.driver = webdriver.Chrome("/home/gvt/Desktop/chromedriver")
+        self.driver = webdriver.Chrome("./chromedriver")
 
     def parse(self, response):
         next = response.xpath(
